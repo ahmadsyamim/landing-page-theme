@@ -1,0 +1,7 @@
+{
+    "name": "LandingPage",
+    "package_name": "ahmadsyamim/landing-page-theme",
+    "extends": "",
+    "asset-path": "LandingPage",
+    "views-path": "LandingPage"
+}
