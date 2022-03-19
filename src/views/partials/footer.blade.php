@@ -6,7 +6,6 @@
     </div> <!-- /.off-canvas-content -->
 
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-    {!! Asset::scripts() !!}
     @stack('scripts')
 </body>
 </html>

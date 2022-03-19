@@ -24,11 +24,10 @@
     <link rel="apple-touch-icon-precomposed" href="{{ url('/') }}/images/apple-touch-icon.png" />
 
     <!-- Styles -->
-    @php 
-     Asset::add('freelancercss','freelancer/css/styles.css');
-     Asset::add('freelancerjs','freelancer/js/scripts.js');
-    @endphp
-    {!! Asset::styles() !!}
+    {{ HTML::style('freelancer/css/styles.css') }}
+    @push('scripts')
+    {{ HTML::script('freelancer/js/scripts.js') }}
+    @endpush
 
     @if (setting('site.google_analytics_tracking_id'))
     <!-- Google Analytics (gtag.js) -->
